@@ -1,0 +1,95 @@
+/* Variables */
+:root {
+  --btnWidth: 100px;
+}
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#mainTitle {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-top: 40px;
+}
+
+#mainParagraph {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/** bar **/
+
+/* dropdown menu */
+
+/*main content*/
+section {
+  padding: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+div.projectCard {
+  background-color: #f2f4f7;
+  min-height: 150px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.btnContainer {
+  min-height: 60px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  flex-grow: 1;
+  position: relative;
+}
+
+.btnElement-1 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.btnElement-2 {
+  position: absolute;
+  right: calc(100% - var(--btnWidth));
+  bottom: 0px;
+}
+
+/*setting style for buttons*/
+
+.btn-1 {
+  width: var(--btnWidth);
+  height: 50px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  color: black;
+  background-color: lightgray;
+  border-radius: 10px;
+  font-family: Arial, Helvetica;
+  font-size: 20px;
+}
+
+.btn-1:hover {
+  background-color: black;
+  color: white;
+}
