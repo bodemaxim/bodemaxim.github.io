@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --btnWidth: 100px;
+  --btnWidth: 200px;
 }
 
 /********** Base styles **********/
@@ -62,15 +62,9 @@ div.projectCard {
   position: relative;
 }
 
-.btnElement-1 {
+.btnElement {
   position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
-
-.btnElement-2 {
-  position: absolute;
-  right: calc(100% - var(--btnWidth));
+  left: calc(50% - var(--btnWidth) / 2);
   bottom: 0px;
 }
 
